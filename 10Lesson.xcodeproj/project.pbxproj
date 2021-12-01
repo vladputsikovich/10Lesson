@@ -13,6 +13,7 @@
 		ED2924E12758085F00990581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2924DF2758085F00990581 /* Main.storyboard */; };
 		ED2924E32758086100990581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2924E22758086100990581 /* Assets.xcassets */; };
 		ED2924E62758086100990581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2924E42758086100990581 /* LaunchScreen.storyboard */; };
+		ED2924EE27580C5F00990581 /* Goverment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2924ED27580C5F00990581 /* Goverment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		ED2924E22758086100990581 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED2924E52758086100990581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2924E72758086100990581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED2924ED27580C5F00990581 /* Goverment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goverment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				ED2924D92758085F00990581 /* AppDelegate.swift */,
 				ED2924DB2758085F00990581 /* SceneDelegate.swift */,
 				ED2924DD2758085F00990581 /* ViewController.swift */,
+				ED2924ED27580C5F00990581 /* Goverment.swift */,
 				ED2924DF2758085F00990581 /* Main.storyboard */,
 				ED2924E22758086100990581 /* Assets.xcassets */,
 				ED2924E42758086100990581 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED2924DE2758085F00990581 /* ViewController.swift in Sources */,
+				ED2924EE27580C5F00990581 /* Goverment.swift in Sources */,
 				ED2924DA2758085F00990581 /* AppDelegate.swift in Sources */,
 				ED2924DC2758085F00990581 /* SceneDelegate.swift in Sources */,
 			);

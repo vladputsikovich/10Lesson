@@ -18,25 +18,29 @@ class Goverment {
     var taxLevel = 5.0 {
         willSet (value) {
             self.taxLevel = value
-            NotificationCenter.default.post(name: .govermentTaxLevelDidChange, object: nil, userInfo: nil)
+            let info: [String: Double] = ["govermentTaxLevelDidChange": taxLevel]
+            NotificationCenter.default.post(name: .govermentTaxLevelDidChange, object: nil, userInfo: info)
         }
     }
     var salary = 1000.0{
         willSet (value) {
             self.salary = value
-            NotificationCenter.default.post(name: .govermentSalaryDidChange, object: nil, userInfo: nil)
+            let info: [String: Double] = ["govermentSalaryDidChange": salary]
+            NotificationCenter.default.post(name: .govermentSalaryDidChange, object: nil, userInfo: info)
         }
     }
     var pension = 550.0 {
         willSet (value) {
             self.pension = value
-            NotificationCenter.default.post(name: .govermentPensionDidChange, object: nil, userInfo: nil)
+            let info: [String: Double] = ["govermentPensionDidChange": pension]
+            NotificationCenter.default.post(name: .govermentPensionDidChange, object: nil, userInfo: info)
         }
     }
     var averagePrice = 50.0 {
         willSet (value) {
             self.averagePrice = value
-            NotificationCenter.default.post(name: .govermentAveragePriceDidChange, object: nil, userInfo: nil)
+            let info: [String: Double] = ["govermentAveragePriceDidChange": averagePrice]
+            NotificationCenter.default.post(name: .govermentAveragePriceDidChange, object: nil, userInfo: info)
         }
     }
     

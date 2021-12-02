@@ -14,13 +14,18 @@ class ViewController: UIViewController {
         
         let goverment = Goverment()
         
+        let doctor = Doctor()
+        
         NotificationCenter.default.addObserver(self, selector: #selector(govermentNotification(_:)), name: .govermentTaxLevelDidChange, object: nil
         )
         
+        
         goverment.taxLevel = 13
-        goverment.salary = 1100
+        goverment.salary = 1400
         goverment.pension = 550
         goverment.averagePrice = 100
+        
+        doctor.salary = goverment.salary
         
         
         

@@ -14,6 +14,9 @@
 		ED2924E32758086100990581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED2924E22758086100990581 /* Assets.xcassets */; };
 		ED2924E62758086100990581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED2924E42758086100990581 /* LaunchScreen.storyboard */; };
 		ED2924EE27580C5F00990581 /* Goverment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED2924ED27580C5F00990581 /* Goverment.swift */; };
+		ED38F24227593790000088DC /* Retiree.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38F24127593790000088DC /* Retiree.swift */; };
+		ED38F244275937E1000088DC /* Businessman.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38F243275937E1000088DC /* Businessman.swift */; };
+		ED38F246275938E0000088DC /* Doctor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED38F245275938E0000088DC /* Doctor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		ED2924E52758086100990581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED2924E72758086100990581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED2924ED27580C5F00990581 /* Goverment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goverment.swift; sourceTree = "<group>"; };
+		ED38F24127593790000088DC /* Retiree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Retiree.swift; sourceTree = "<group>"; };
+		ED38F243275937E1000088DC /* Businessman.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Businessman.swift; sourceTree = "<group>"; };
+		ED38F245275938E0000088DC /* Doctor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Doctor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,9 @@
 				ED2924DB2758085F00990581 /* SceneDelegate.swift */,
 				ED2924DD2758085F00990581 /* ViewController.swift */,
 				ED2924ED27580C5F00990581 /* Goverment.swift */,
+				ED38F245275938E0000088DC /* Doctor.swift */,
+				ED38F243275937E1000088DC /* Businessman.swift */,
+				ED38F24127593790000088DC /* Retiree.swift */,
 				ED2924DF2758085F00990581 /* Main.storyboard */,
 				ED2924E22758086100990581 /* Assets.xcassets */,
 				ED2924E42758086100990581 /* LaunchScreen.storyboard */,
@@ -141,10 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED38F244275937E1000088DC /* Businessman.swift in Sources */,
 				ED2924DE2758085F00990581 /* ViewController.swift in Sources */,
 				ED2924EE27580C5F00990581 /* Goverment.swift in Sources */,
+				ED38F24227593790000088DC /* Retiree.swift in Sources */,
 				ED2924DA2758085F00990581 /* AppDelegate.swift in Sources */,
 				ED2924DC2758085F00990581 /* SceneDelegate.swift in Sources */,
+				ED38F246275938E0000088DC /* Doctor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

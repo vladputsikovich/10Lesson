@@ -9,6 +9,7 @@ import Foundation
 
 class Doctor {
     var salary: Double = 700
+    var averagePrice: Double = 50
     
     init() {
         let nc: NotificationCenter = NotificationCenter.default
@@ -39,9 +40,12 @@ class Doctor {
     @objc func averagePriceDidChange(_ notification: Notification) {
         guard let newAveragePrice = notification.userInfo?["govermentAveragePriceDidChange"] as? Double else {return}
         print(newAveragePrice)
+        guard let inflation = notification.userInfo?["govermentInflation"] as? Double else {return}
+        print("Инфляция составила - \(inflation)")
+        print("Потенциальная зарплата должна быть: \(((self.salary) * (100 + inflation)) / 100)")
     }
     
-    func dealloc(){
+    func dealloc() {
         NotificationCenter.default.removeObserver(self)
     }
 }

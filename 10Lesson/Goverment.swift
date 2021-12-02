@@ -22,7 +22,7 @@ class Goverment {
             NotificationCenter.default.post(name: .govermentTaxLevelDidChange, object: nil, userInfo: info)
         }
     }
-    var salary = 1000.0{
+    var salary = 1000.0 {
         willSet (value) {
             self.salary = value
             let info: [String: Double] = ["govermentSalaryDidChange": salary]
@@ -38,8 +38,9 @@ class Goverment {
     }
     var averagePrice = 50.0 {
         willSet (value) {
+            let inflation: Double = self.averagePrice < value ? ((value * 100) / self.averagePrice) - 100 : 0
             self.averagePrice = value
-            let info: [String: Double] = ["govermentAveragePriceDidChange": averagePrice]
+            let info: [String: Double] = ["govermentAveragePriceDidChange": averagePrice, "govermentInflation": inflation]
             NotificationCenter.default.post(name: .govermentAveragePriceDidChange, object: nil, userInfo: info)
         }
     }

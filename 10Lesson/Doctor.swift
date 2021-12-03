@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Doctor {
     var salary: Double = 700
@@ -23,6 +24,12 @@ class Doctor {
             self,
             selector: #selector(averagePriceDidChange(_:)),
             name: .govermentAveragePriceDidChange,
+            object: nil
+        )
+        nc.addObserver(
+            self,
+            selector: #selector(appSleep(_:)),
+            name: UIApplication.didEnterBackgroundNotification,
             object: nil
         )
     }
@@ -43,6 +50,10 @@ class Doctor {
         guard let inflation = notification.userInfo?["govermentInflation"] as? Double else {return}
         print("Инфляция составила - \(inflation)")
         print("Потенциальная зарплата должна быть: \(((self.salary) * (100 + inflation)) / 100)")
+    }
+    
+    @objc func appSleep(_ notification: Notification) {
+        print("SLEEP DOCTOR")
     }
     
     func dealloc() {

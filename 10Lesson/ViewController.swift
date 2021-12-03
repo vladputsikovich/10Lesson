@@ -23,7 +23,6 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(govermentNotification(_:)), name: .govermentTaxLevelDidChange, object: nil
         )
         
-        
         goverment.taxLevel = 13
         goverment.salary = 1400
         goverment.pension = 550
@@ -39,6 +38,7 @@ class ViewController: UIViewController {
         retiree.averagePrice = goverment.averagePrice
         
     }
+    
     @objc func govermentNotification(_ notification: Notification) {
         print(notification.description)
     }
